@@ -24,50 +24,65 @@ html, body {
     margin: 0 auto; /* Выравнивание по центру */
 }
 
+
 // --------------------- Header ---------------------
 .header {
-  background: #1f1f1f;
-  padding: 20px 0;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #00ff88;
-  }
-
-  .nav {
+    background: #1f1f1f;
+    height: 60px; /* Фиксируем высоту */
+    padding: 0 20px; /* Только горизонтальные отступы */
     display: flex;
-    gap: 15px;
-
-    a {
-      text-decoration: none;
-      color: #ffffff;
+    justify-content: space-between;
+    align-items: center;
+  
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+      color: #00ff88;
+      line-height: 1; /* Убираем лишние вертикальные пробелы */
+    }
+  
+    .nav {
+      display: flex;
+      gap: 15px;
+  
+      a {
+        text-decoration: none;
+        color: #ffffff;
+        font-size: 16px;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #00ff88;
+        }
+      }
+    }
+  
+    .cta-button {
+      background: #00ff88;
+      color: #000000;
+      border: none;
+      padding: 8px 16px; /* Уменьшаем внутренние отступы */
       font-size: 16px;
-      transition: color 0.3s;
-
+      cursor: pointer;
+      border-radius: 5px;
+  
       &:hover {
-        color: #00ff88;
+        background: #00cc66;
+      }
+    }
+  
+    .hamburger {
+      margin: 0;
+      padding: 0;
+      display: none; /* Скрываем гамбургер по умолчанию */
+  
+      @media (max-width: 768px) {
+        display: block; /* Показываем только на мобильных */
       }
     }
   }
-
-  .cta-button {
-    background: #00ff88;
-    color: #000000;
-    border: none;
-    padding: 10px 20px;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-
-    &:hover {
-      background: #00cc66;
-    }
-  }
-}
+  
+  
 
 // --------------------- HeroSection ---------------------
 .hero {
