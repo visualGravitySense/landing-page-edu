@@ -13,21 +13,20 @@ const Header = () => {
     <header className="header">
       <div className="logo">Ваш Логотип</div>
       <button
-        className={`hamburger ${isMenuOpen ? "active" : ""}`}
-        aria-label="Открыть меню"
+        className="hamburger"
         onClick={toggleMenu}
+        aria-label="Открыть меню"
       >
         <span></span>
         <span></span>
         <span></span>
       </button>
-      <nav className={`nav ${isMenuOpen ? "active" : ""}`}>
+      <nav className={`nav ${isMenuOpen ? "nav--open" : ""}`}>
         <a href="#advantages">Преимущества</a>
         <a href="#features">Возможности</a>
         <a href="#contacts">Контакты</a>
+        <button className="cta-button">Оставить заявку</button>
       </nav>
-
-      <button className="cta-button">Оставить заявку</button>
       
     </header>
   );

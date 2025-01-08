@@ -28,60 +28,95 @@ html, body {
 // --------------------- Header ---------------------
 .header {
     background: #1f1f1f;
-    height: 60px; /* Фиксируем высоту */
-    padding: 0 20px; /* Только горизонтальные отступы */
+    height: 60px;
+    padding: 0 20px;
     display: flex;
     justify-content: space-between;
     align-items: center;
+  }
   
-    .logo {
-      font-size: 24px;
-      font-weight: bold;
-      color: #00ff88;
-      line-height: 1; /* Убираем лишние вертикальные пробелы */
+  .logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: #00ff88;
+    line-height: 1;
+  }
+  
+  .nav {
+    display: flex;
+    gap: 15px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    align-items: center; /* Центрирование по вертикали */
+  }
+  
+  .nav a {
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 16px;
+    transition: color 0.3s;
+  }
+  
+  .nav a:hover {
+    color: #00ff88;
+  }
+  
+  .cta-button {
+    background: #00ff88;
+    color: #000000;
+    border: none;
+    padding: 8px 16px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  .cta-button:hover {
+    background: #00cc66;
+  }
+  
+  /* Гамбургер */
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    gap: 4px;
+    cursor: pointer;
+    background: none;
+    border: none;
+  }
+  
+  .hamburger span {
+    width: 25px;
+    height: 3px;
+    background: #fff;
+  }
+  
+  /* Показываем гамбургер и настраиваем выпадающее меню на мобильных */
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
     }
   
     .nav {
-      display: flex;
-      gap: 15px;
+      position: absolute;
+      top: 60px;
+      right: 0;
+      background: #1f1f1f;
+      flex-direction: column;
+      gap: 10px;
+      padding: 10px 20px;
+      width: 100%;
+      max-width: 300px;
   
-      a {
-        text-decoration: none;
-        color: #ffffff;
-        font-size: 16px;
-        transition: color 0.3s;
-  
-        &:hover {
-          color: #00ff88;
-        }
-      }
+      /* Меню закрыто по умолчанию */
+      transform: translateX(100%);
+      opacity: 0;
     }
   
-    .cta-button {
-      background: #00ff88;
-      color: #000000;
-      border: none;
-      padding: 8px 16px; /* Уменьшаем внутренние отступы */
-      font-size: 16px;
-      cursor: pointer;
-      border-radius: 5px;
-  
-      &:hover {
-        background: #00cc66;
-      }
-    }
-  
-    .hamburger {
-      margin: 0;
-      padding: 0;
-      display: none; /* Скрываем гамбургер по умолчанию */
-  
-      @media (max-width: 768px) {
-        display: block; /* Показываем только на мобильных */
-      }
+    .nav--open {
+      transform: translateX(0);
+      opacity: 1;
     }
   }
-  
   
 
 // --------------------- HeroSection ---------------------
@@ -117,40 +152,40 @@ html, body {
 
 // --------------------- Advantages ---------------------
 .advantages {
-  padding: 50px 0;
-  background: #1f1f1f;
+    padding: 50px 0;
 
-  h2 {
-    text-align: center;
-    font-size: 32px;
-    margin-bottom: 30px;
-  }
-
-  .advantage-cards {
-    display: flex;
-    justify-content: space-around;
-    gap: 20px;
-
+    .advantage-cards {
+      
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      padding: 20px 0;
+    }
+  
     .card {
-      background: #2a2a2a;
+      background: #1f1f1f;
       padding: 20px;
-      border-radius: 10px;
+      border-radius: 8px;
       text-align: center;
-      flex: 1;
-
-      h3 {
-        font-size: 24px;
-        margin-bottom: 15px;
+      color: #ffffff;
+  
+      .card-icon {
         color: #00ff88;
+        margin-bottom: 10px;
       }
-
+  
+      h3 {
+        margin-top: 10px;
+        font-size: 20px;
+      }
+  
       p {
         font-size: 16px;
         color: #cccccc;
       }
     }
   }
-}
+  
 
 // --------------------- Features ---------------------
 .features {
