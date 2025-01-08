@@ -1,4 +1,4 @@
-import Header from '../components/Header';
+// import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import Advantages from '../components/Advantages';
 import Features from '../components/Features';
@@ -9,7 +9,7 @@ import Footer from '../components/Footer';
 const Home = () => {
   return (
     <>
-      <Header />
+      {/* <Header /> */}
       <HeroSection />
       <Advantages />
       <Features />
