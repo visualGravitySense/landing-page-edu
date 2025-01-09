@@ -24,7 +24,7 @@ const Header = () => {
       <nav className={`nav ${isMenuOpen ? "nav--open" : ""}`}>
         <a href="#advantages">Преимущества</a>
         <a href="#features">Возможности</a>
-        <a href="#contacts">Контакты</a>
+        <a href="#plans">Цены</a>
         <button className="cta-button">Оставить заявку</button>
       </nav>
       
