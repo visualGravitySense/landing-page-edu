@@ -6,6 +6,8 @@ import CTA from '../components/CTA';
 import Reviews from '../components/Reviews';
 import Footer from '../components/Footer';
 import ProcessDescription from '../components/ProcessDescription';
+import Prices from '../components/Prices';
+// import SpecialOffers from '../components/SpecialOffers';
 
 const Home = () => {
   return (
@@ -15,6 +17,8 @@ const Home = () => {
       <Advantages />
       <Features />
       <ProcessDescription />
+      <Prices />
+      {/* <SpecialOffers /> */}
       <CTA />
       <Reviews />
       <Footer />
