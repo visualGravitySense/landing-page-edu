@@ -5,6 +5,7 @@ import Features from '../components/Features';
 import CTA from '../components/CTA';
 import Reviews from '../components/Reviews';
 import Footer from '../components/Footer';
+import ProcessDescription from '../components/ProcessDescription';
 
 const Home = () => {
   return (
@@ -13,6 +14,7 @@ const Home = () => {
       <HeroSection />
       <Advantages />
       <Features />
+      <ProcessDescription />
       <CTA />
       <Reviews />
       <Footer />

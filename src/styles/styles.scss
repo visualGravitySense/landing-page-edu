@@ -27,12 +27,20 @@ html, body {
 
 // --------------------- Header ---------------------
 .header {
-    background: #1f1f1f;
-    height: 60px;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  background: #1f1f1f;
+  height: 60px;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+    // position: static; /* По умолчанию */
+    // width: 100%; /* Занимает всю ширину экрана */
+    // z-index: 1000; /* Чтобы меню было поверх других элементов */
+
+    // @media (min-width: 1024px) {
+    //     position: fixed; /* Закрепляем шапку сверху на десктопах */
+    //     top: 0;
+      // }
   }
   
   .logo {
@@ -152,39 +160,60 @@ html, body {
 
 // --------------------- Advantages ---------------------
 .advantages {
-    padding: 50px 0;
+  padding: 50px 0;
 
-    .advantage-cards {
-      
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-      gap: 20px;
-      padding: 20px 0;
+  .advantage-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      background: #2a2a2a;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
     }
-  
-    .card {
-      background: #1f1f1f;
-      padding: 20px;
-      border-radius: 8px;
-      text-align: center;
+
+    .card-emoji {
+      font-size: 50px; /* Размер emoji */
+      margin-bottom: 15px; /* Отступ снизу */
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2); /* Увеличиваем размер emoji при наведении */
+      }
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
       color: #ffffff;
-  
-      .card-icon {
+      transition: color 0.3s ease;
+
+      &:hover {
         color: #00ff88;
-        margin-bottom: 10px;
       }
-  
-      h3 {
-        margin-top: 10px;
-        font-size: 20px;
-      }
-  
-      p {
-        font-size: 16px;
-        color: #cccccc;
-      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #cccccc;
+      line-height: 1.5;
     }
   }
+}
+
   
 
 // --------------------- Features ---------------------
@@ -194,7 +223,7 @@ html, body {
 
   h2 {
     text-align: center;
-    font-size: 32px;
+    // font-size: 32px;
     margin-bottom: 30px;
   }
 
@@ -363,6 +392,68 @@ html, body {
     }
   }
 }
+
+
+// --------------------- Process Description ---------------------
+
+.process {
+  padding: 50px 0;
+
+  .process-steps {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px 0;
+  }
+
+  .step-card {
+    background: #1f1f1f;
+    padding: 20px;
+    border-radius: 8px;
+    text-align: center;
+    color: #ffffff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+
+    &:hover {
+      transform: translateY(-5px);
+      background: #2a2a2a;
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .step-emoji {
+      font-size: 50px; /* Размер emoji */
+      margin-bottom: 15px; /* Отступ снизу */
+      transition: transform 0.3s ease;
+
+      &:hover {
+        transform: scale(1.2); /* Увеличение размера при наведении */
+      }
+    }
+
+    h3 {
+      margin-top: 10px;
+      font-size: 20px;
+      font-weight: bold;
+      color: #ffffff;
+      transition: color 0.3s ease;
+
+      &:hover {
+        color: #00ff88;
+      }
+    }
+
+    p {
+      font-size: 16px;
+      color: #cccccc;
+      line-height: 1.5;
+    }
+  }
+}
+
+
+
+
 
 // * {
 //     outline: 1px solid red;
