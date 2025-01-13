@@ -121,6 +121,12 @@ html, body {
       background: #00994d;
     }
   }
+
+  @media (max-width: 768px) {
+    .nav {
+      display: none; /* Полностью скрываем меню на мобильных устройствах */
+    }
+  }
   
   /* Гамбургер */
   .hamburger {
