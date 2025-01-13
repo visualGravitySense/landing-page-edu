@@ -27,6 +27,6 @@ const Advantages = () => {
       </div>
     </section>
   );
-};
+}; 
 
 export default Advantages;
