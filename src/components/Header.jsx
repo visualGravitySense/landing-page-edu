@@ -1,6 +1,7 @@
 import React from 'react';
 import { useState } from "react";
 import '../styles/styles.scss';
+import logo from '../assets/digo-logo.png';
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -11,7 +12,10 @@ const Header = () => {
 
   return (
     <header className="header">
-      <div className="logo">Ваш Логотип</div>
+      <div className="logo">
+        <img src={logo} alt="Digo Logo" />
+        {/* <img src="/src/assets/digo-logo.png" alt="Digo Logo" /> */}
+      </div>
       <button
         className="hamburger"
         onClick={toggleMenu}
