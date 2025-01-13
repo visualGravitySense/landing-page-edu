@@ -12,7 +12,7 @@ const Process = () => {
   return (
     <section id="process" className="process">
       <div className="container">
-        <h2>Процесс работы</h2>
+        <h2>Процесс запуска</h2>
         <div className="process-steps">
           {processSteps.map((step) => (
             <div key={step.id} className="step-card">
