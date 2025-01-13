@@ -48,7 +48,7 @@ const specialOffers = [
 
 const Prices = () => {
   return (
-    <section id="prices" className="prices">
+    <section id="plans" className="prices">
       <div className="container">
         <h2>Цены и Предложения</h2>
 
