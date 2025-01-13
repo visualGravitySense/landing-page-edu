@@ -9,9 +9,14 @@ const HeroSection = () => {
         <span className="highlight">Создайте</span> <br />
         <span className="dynamic-text">школу вашей мечты</span>
       </h1>
-      <p>Быстро, профессионально и под ключ</p>
-      <button className="cta-button">Оставить заявку</button>
-    </div>
+      <p>Быстро, профессионально и под ключ.</p>
+      <button
+        className="cta-button"
+        onClick={() => window.open('https://t.me/visual_sense', '_blank')}
+      >
+        Оставить заявку
+      </button>
+          </div>
   </section>
   );
 };
