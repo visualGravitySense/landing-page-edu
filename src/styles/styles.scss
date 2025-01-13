@@ -86,10 +86,15 @@ html, body {
     font-size: 16px;
     cursor: pointer;
     border-radius: 5px;
-  }
+    transition: background 0.3s ease;
   
-  .cta-button:hover {
-    background: #00cc66;
+    &:hover {
+      background: #00cc66;
+    }
+  
+    &:active {
+      background: #00994d;
+    }
   }
   
   /* Гамбургер */
@@ -394,23 +399,37 @@ html, body {
     flex-wrap: wrap;
     gap: 20px;
     justify-content: center;
-
+  
     .card {
       background: #2a2a2a;
       padding: 20px;
       border-radius: 10px;
       text-align: center;
       max-width: 300px;
-
+  
       h3 {
         font-size: 20px;
         margin-bottom: 10px;
         color: #00ff88;
       }
-
+  
       p {
         font-size: 16px;
         color: #cccccc;
+        margin-bottom: 10px;
+      }
+  
+      .link {
+        display: inline-block;
+        margin-top: 10px;
+        font-size: 14px;
+        color: #00aaff;
+        text-decoration: none;
+        transition: color 0.3s;
+  
+        &:hover {
+          color: #0099cc;
+        }
       }
     }
   }

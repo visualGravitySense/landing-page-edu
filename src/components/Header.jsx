@@ -29,7 +29,12 @@ const Header = () => {
         <a href="#advantages">Преимущества</a>
         <a href="#features">Возможности</a>
         <a href="#plans">Цены</a>
-        <button className="cta-button">Оставить заявку</button>
+        <button
+          className="cta-button"
+          onClick={() => window.open('https://t.me/visual_sense', '_blank')}
+        >
+          Оставить заявку
+        </button>
       </nav>
       
     </header>

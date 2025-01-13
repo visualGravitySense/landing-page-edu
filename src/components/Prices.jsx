@@ -42,17 +42,17 @@ const pricingPlans = [
 
 const specialOffers = [
   {
-    title: "Бонус за быстрый заказ",
-    description: "Закажите проект до 31 января и получите лендинг для курса в подарок!",
+    title: "Бонус за быстрый старт",
+    description: "Закажите проект до 31 января и получите пакет из 10 рекламных баннеров для продвижения в соцсетях.",
   },
   {
     title: "Пробный период",
-    description: "1 месяц бесплатной консультации по продвижению после запуска.",
+    description: "После запуска вашей онлайн-школы предоставляется поддержка в настройке рекламы и аналитики.",
   },
-  {
-    title: "Скидка 15%",
-    description: "Только до 31 января — скидка 15% на создание школы + дизайн 5 постов!",
-  },
+  // {
+    // title: "Скидка 15%",
+    // description: "Только до 31 января — скидка 15% на создание школы + дизайн 5 постов!",
+  // },
 ];
 
 const Prices = () => {
@@ -75,7 +75,14 @@ const Prices = () => {
               <div className="extras">
                 <p>{plan.extras}</p>
               </div>
-              <button className="select-plan">Выбрать</button>
+              {/* <button className="select-plan">Выбрать</button> */}
+
+              <button
+                className="select-plan"
+                onClick={() => window.open('https://t.me/visual_sense', '_blank')}
+              >
+                Оставить заявку
+              </button>
             </div>
         ))}
       </div>
