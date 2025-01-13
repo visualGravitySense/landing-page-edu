@@ -195,7 +195,7 @@ html, body {
   p {
     font-size: 24px;
     margin-bottom: 30px;
-    color: #cccccc;
+    color: #e6e6e6;
     font-weight: 300;
   }
 
@@ -246,9 +246,16 @@ html, body {
     }
 
     .card-emoji {
-      font-size: 50px; /* Размер emoji */
-      margin-bottom: 15px; /* Отступ снизу */
-      transition: transform 0.3s ease;
+      // font-size: 50px; /* Размер emoji */
+      // margin-bottom: 15px; /* Отступ снизу */
+      // transition: transform 0.3s ease;
+
+      img {
+        width: 100px;  /* Размер изображения */
+        height: 100px;  /* Размер изображения */
+        // margin-bottom: 15px; /* Отступ снизу */
+        transition: transform 0.3s ease;
+      }
 
       &:hover {
         transform: scale(1.2); /* Увеличиваем размер emoji при наведении */
