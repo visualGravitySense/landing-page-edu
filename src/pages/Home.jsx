@@ -1,6 +1,7 @@
 // import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
 import Advantages from '../components/Advantages';
+import AdvantagesBlock from '../components/AdvantagesBlock';
 import Features from '../components/Features';
 import CTA from '../components/CTA';
 import Reviews from '../components/Reviews';
@@ -15,6 +16,7 @@ const Home = () => {
       {/* <Header /> */}
       <HeroSection />
       <Advantages />
+      <AdvantagesBlock />
       <Features />
       <ProcessDescription />
       <Prices />
