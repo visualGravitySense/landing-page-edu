@@ -9,17 +9,17 @@ import gamefication from '../assets/gamefication.png';
 
 
 const advantages = [
-  { id: 1, image: lms, title: 'Система управления', description: 'Управляйте курсами и отслеживайте прогресс.' },
-  { id: 2, image: cms, title: 'Система для контента', description: 'Создавайте и редактируйте контент.' },
-  { id: 3, image: widgets, title: 'Виджеты и API', description: 'Интегрируйте курсы с другими сервисами и платформами.' },
-  { id: 4, image: gamefication, title: 'Геймификация', description: 'Мотивируйте студентов через достижения и рейтинги.' },
+  { id: 1, image: lms, title: 'Удобство для клиентов', description: 'Запись онлайн, смс-напоминания, быстрая оплата.' },
+  { id: 2, image: cms, title: 'Упрощенное управление', description: 'Расписание, график работы, контроль записей.' },
+  { id: 3, image: widgets, title: 'Автоматизация отчетов', description: 'Аналитика продаж, учет скидок, отслеживание финансов.' },
+  { id: 4, image: gamefication, title: 'Интеграция с CRM', description: 'Контроль базы клиентов, программы лояльности.' },
 ];
 
 const Advantages = () => {
   return (
     <section id="advantages" className="advantages">
       <div className="container">
-        <h2>Преимущества</h2>
+        <h2>Преимущества POS-систем для школ</h2>
         <div className="advantage-cards">
           {advantages.map((adv) => (
             <div key={adv.id} className="card">

@@ -13,7 +13,7 @@ const CTA = () => {
                 className="cta-button"
                 onClick={() => window.open('https://t.me/visual_sense', '_blank')}
               >
-                Заказать консультацию
+                Заказать консультацию в Telegram
               </button>
       </div>
     </section>
