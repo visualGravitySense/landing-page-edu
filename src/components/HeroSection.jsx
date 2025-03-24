@@ -6,15 +6,15 @@ const HeroSection = () => {
     <section className="hero">
     <div className="container">
       <h1>
-        <span className="highlight">Создайте</span> <br />
-        <span className="dynamic-text">школу вашей мечты</span>
+        <span className="highlight">Современная POS-система</span> <br />
+        <span className="dynamic-text">для вашей школы мечты</span>
       </h1>
-      <p>Быстро, профессионально и под ключ.</p>
+      <p>Удобное управление, простой интерфейс, увеличение прибыли.</p>
       <button
         className="cta-button"
         onClick={() => window.open('https://t.me/visual_sense', '_blank')}
       >
-        Оставить заявку
+        Оставить заявку в Telegram
       </button>
           </div>
   </section>
