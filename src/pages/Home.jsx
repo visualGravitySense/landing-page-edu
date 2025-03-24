@@ -18,11 +18,11 @@ const Home = () => {
       <Advantages />
       <AdvantagesBlock />
       <Features />
-      <ProcessDescription />
       <Prices />
       {/* <SpecialOffers /> */}
       <CTA />
       <Reviews />
+      <ProcessDescription />
       <Footer />
     </>
   );
