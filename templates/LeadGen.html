@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduQuest - Interactive Learning Platform</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <style>
+        .gradient-bg {
+            background: linear-gradient(90deg, #4f46e5 0%, #7c3aed 100%);
+        }
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+    </style>
+</head>
+<body class="font-sans antialiased text-gray-800 bg-gray-50">
+    <!-- Hero Section -->
+    <header class="gradient-bg text-white">
+        <div class="container mx-auto px-6 py-16 md:py-24 lg:flex items-center">
+            <div class="lg:w-1/2 lg:pr-10">
+                <h1 class="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
+                    Learning Becomes an Adventure
+                </h1>
+                <p class="text-xl md:text-2xl opacity-90 mb-8">
+                    The first educational platform that transforms classes into quests, knowledge into achievements, and learning into competition.
+                </p>
+                <div class="bg-white bg-opacity-20 p-6 rounded-lg backdrop-filter backdrop-blur-sm mb-10">
+                    <p class="font-medium mb-3">🚀 Coming Soon! Be the first to know when we launch:</p>
+                    <form id="signup-form" class="flex flex-col md:flex-row gap-3">
+                        <input type="email" placeholder="Your email address" required class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none focus:ring-2 focus:ring-indigo-500">
+                        <button type="submit" class="px-6 py-3 bg-indigo-700 hover:bg-indigo-800 rounded-lg font-medium transition-colors duration-200 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-indigo-500">
+                            Get Early Access
+                        </button>
+                    </form>
+                    <p class="text-sm mt-3 opacity-80">We respect your privacy. No spam, ever.</p>
+                </div>
+            </div>
+            <div class="lg:w-1/2 flex justify-center">
+                <img src="/api/placeholder/500/400" alt="Interactive Learning Platform" class="rounded-lg shadow-xl">
+            </div>
+        </div>
+    </header>
+
+    <!-- Features Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-16">Transform Your Learning Experience</h2>
+            
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Feature 1 -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-100 shadow-md transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-indigo-100 flex items-center justify-center mb-5">
+                        <i class="fas fa-gamepad text-2xl text-indigo-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Gamified Quizzes</h3>
+                    <p class="text-gray-600">
+                        Turn boring assessments into exciting challenges with points, streaks, and interactive elements that make learning addictive.
+                    </p>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-100 shadow-md transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-purple-100 flex items-center justify-center mb-5">
+                        <i class="fas fa-trophy text-2xl text-purple-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Achievement System</h3>
+                    <p class="text-gray-600">
+                        Earn badges and unlock achievements as you master new concepts, creating tangible progress markers on your learning journey.
+                    </p>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-100 shadow-md transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-blue-100 flex items-center justify-center mb-5">
+                        <i class="fas fa-chart-line text-2xl text-blue-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Performance Analytics</h3>
+                    <p class="text-gray-600">
+                        Track your progress with detailed insights that highlight strengths and identify areas needing more attention.
+                    </p>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-100 shadow-md transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-green-100 flex items-center justify-center mb-5">
+                        <i class="fas fa-users text-2xl text-green-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Competitive Learning</h3>
+                    <p class="text-gray-600">
+                        Climb leaderboards and challenge friends to friendly competition that motivates deeper engagement with material.
+                    </p>
+                </div>
+                
+                <!-- Feature 5 -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-100 shadow-md transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-red-100 flex items-center justify-center mb-5">
+                        <i class="fas fa-brain text-2xl text-red-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Adaptive Learning</h3>
+                    <p class="text-gray-600">
+                        Experience personalized learning paths that adjust difficulty based on your performance and learning style.
+                    </p>
+                </div>
+                
+                <!-- Feature 6 -->
+                <div class="feature-card bg-white rounded-xl p-6 border border-gray-100 shadow-md transition duration-300">
+                    <div class="w-14 h-14 rounded-full bg-yellow-100 flex items-center justify-center mb-5">
+                        <i class="fas fa-edit text-2xl text-yellow-600"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Easy Content Creation</h3>
+                    <p class="text-gray-600">
+                        For educators: Create engaging interactive content with our simple markdown editor and quiz templates.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Educators Section -->
+    <section class="py-16 md:py-24 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex items-center">
+                <div class="lg:w-1/2 lg:pr-10 mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">For Educators</h2>
+                    <p class="text-xl text-gray-700 mb-6">
+                        Create engaging interactive learning experiences without technical expertise.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Simple markdown editor for content creation</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Track student progress with detailed analytics</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Identify knowledge gaps through performance data</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-green-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Boost engagement through gamification elements</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/450/350" alt="For Educators" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- For Students Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="lg:flex items-center flex-row-reverse">
+                <div class="lg:w-1/2 lg:pl-10 mb-10 lg:mb-0">
+                    <h2 class="text-3xl font-bold mb-6">For Students</h2>
+                    <p class="text-xl text-gray-700 mb-6">
+                        Learn more effectively through interactive challenges that make studying enjoyable.
+                    </p>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-indigo-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Earn points and badges as you master concepts</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-indigo-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Compete with peers on class leaderboards</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-indigo-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Track your progress with visual analytics</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="flex-shrink-0 h-6 w-6 rounded-full bg-indigo-500 flex items-center justify-center mt-1">
+                                <i class="fas fa-check text-white text-sm"></i>
+                            </div>
+                            <p class="ml-3 text-lg text-gray-700">Learn at your own pace with adaptive difficulty</p>
+                        </li>
+                    </ul>
+                </div>
+                <div class="lg:w-1/2 flex justify-center">
+                    <img src="/api/placeholder/450/350" alt="For Students" class="rounded-lg shadow-xl">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CTA Section -->
+    <section class="gradient-bg text-white py-16">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl font-bold mb-6">Join the Learning Revolution</h2>
+            <p class="text-xl mb-10 max-w-2xl mx-auto">
+                Be among the first to experience how EduQuest transforms education through gamification and interactive learning.
+            </p>
+            <div class="max-w-md mx-auto">
+                <form id="signup-form-bottom" class="flex flex-col md:flex-row gap-3">
+                    <input type="email" placeholder="Your email address" required class="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none">
+                    <button type="submit" class="px-6 py-3 bg-white text-indigo-700 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200">
+                        Get Early Access
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 md:py-24 bg-white">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">Frequently Asked Questions</h2>
+            
+            <div class="max-w-3xl mx-auto space-y-6">
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">When will EduQuest be available?</h3>
+                    <p class="text-gray-600">
+                        We're currently in final development and plan to launch in Q3 2025. Sign up to get early access and be notified when we go live.
+                    </p>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">What subjects does EduQuest support?</h3>
+                    <p class="text-gray-600">
+                        EduQuest supports any subject matter. Our platform provides tools for content creators to develop interactive quizzes for any field of study, from mathematics and science to language arts and humanities.
+                    </p>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">How much will EduQuest cost?</h3>
+                    <p class="text-gray-600">
+                        We'll offer both free and premium tiers. The free tier will include basic quiz creation and participation, while premium features like advanced analytics and additional gamification elements will be available in paid tiers. Pricing details will be announced closer to launch.
+                    </p>
+                </div>
+                
+                <div class="border-b border-gray-200 pb-6">
+                    <h3 class="text-xl font-semibold mb-3">Can I use EduQuest for my classroom or organization?</h3>
+                    <p class="text-gray-600">
+                        Absolutely! EduQuest is designed for both individual educators and organizations. We'll offer special pricing for schools, universities, and corporate training departments with features tailored to institutional needs.
+                    </p>
+                </div>
+                
+                <div class="pb-6">
+                    <h3 class="text-xl font-semibold mb-3">How is EduQuest different from other quiz platforms?</h3>
+                    <p class="text-gray-600">
+                        EduQuest combines the best elements of interactive learning with sophisticated gamification that makes education inherently engaging. Our platform uses AI to personalize learning experiences and provides rich analytics that help both educators and learners track progress effectively.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row justify-between mb-8">
+                <div class="mb-6 md:mb-0">
+                    <h2 class="text-2xl font-bold mb-4">EduQuest</h2>
+                    <p class="text-gray-400 max-w-sm">
+                        Transforming education through gamification, interactive learning, and AI-powered personalization.
+                    </p>
+                </div>
+                
+                <div class="grid grid-cols-2 md:grid-cols-3 gap-8">
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Company</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">About Us</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Careers</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Contact</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Resources</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Blog</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Documentation</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Help Center</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div>
+                        <h3 class="text-lg font-semibold mb-4">Legal</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Privacy Policy</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Terms of Service</a></li>
+                            <li><a href="#" class="text-gray-400 hover:text-white transition-colors">Cookie Policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2025 EduQuest. All rights reserved.</p>
+                
+                <div class="flex space-x-4">
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-twitter text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-facebook text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="#" class="text-gray-400 hover:text-white transition-colors">
+                        <i class="fab fa-linkedin text-xl"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Form submission handling
+        document.addEventListener('DOMContentLoaded', function() {
+            const forms = document.querySelectorAll('#signup-form, #signup-form-bottom');
+            
+            forms.forEach(form => {
+                form.addEventListener('submit', function(e) {
+                    e.preventDefault();
+                    const email = this.querySelector('input[type="email"]').value;
+                    
+                    // In a real implementation, you would send this to your backend
+                    console.log('Email submitted:', email);
+                    
+                    // Show success message
+                    const button = this.querySelector('button');
+                    const originalText = button.innerHTML;
+                    button.innerHTML = 'Thank you!';
+                    
+                    setTimeout(() => {
+                        button.innerHTML = originalText;
+                        this.reset();
+                    }, 3000);
+                });
+            });
+        });
+    </script>
+</body>
+</html>

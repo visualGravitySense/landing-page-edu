@@ -1,28 +1,30 @@
 // import Header from '../components/Header';
 import HeroSection from '../components/HeroSection';
-import Advantages from '../components/Advantages';
-import AdvantagesBlock from '../components/AdvantagesBlock';
 import Features from '../components/Features';
+import ForEducators from '../components/ForEducators';
+import ForStudents from '../components/ForStudents';
 import CTA from '../components/CTA';
-import Reviews from '../components/Reviews';
+import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
-import ProcessDescription from '../components/ProcessDescription';
-import Prices from '../components/Prices';
-// import SpecialOffers from '../components/SpecialOffers';
 
 const Home = () => {
   return (
     <>
       {/* <Header /> */}
       <HeroSection />
-      <Advantages />
-      <AdvantagesBlock />
       <Features />
-      <Prices />
-      {/* <SpecialOffers /> */}
-      <CTA />
-      <Reviews />
-      <ProcessDescription />
+      <div id="for-educators">
+        <ForEducators />
+      </div>
+      <div id="for-students">
+        <ForStudents />
+      </div>
+      <div id="cta">
+        <CTA />
+      </div>
+      <div id="faq">
+        <FAQ />
+      </div>
       <Footer />
     </>
   );
