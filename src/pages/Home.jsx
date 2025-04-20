@@ -7,11 +7,13 @@ import CTA from '../components/CTA';
 import FAQ from '../components/FAQ';
 import Footer from '../components/Footer';
 
+
 const Home = () => {
   return (
     <>
       {/* <Header /> */}
       <HeroSection />
+      
       <Features />
       <div id="for-educators">
         <ForEducators />

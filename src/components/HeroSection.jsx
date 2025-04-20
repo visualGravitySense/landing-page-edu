@@ -1,6 +1,10 @@
 import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faRocket } from '@fortawesome/free-solid-svg-icons';
+import QuizApp from '../components/QuizApp';
+import { QuizProvider } from '../context/QuizContext';
+
+
 
 const HeroSection = () => {
   const [email, setEmail] = useState('');
@@ -55,7 +59,9 @@ const HeroSection = () => {
           </div>
         </div>
         <div className="lg:w-1/2 flex justify-center">
-          <img src="/api/placeholder/500/400" alt="Interactive Learning Platform" className="rounded-lg shadow-xl" />
+        <QuizProvider>
+          <QuizApp />
+        </QuizProvider>
         </div>
       </div>
     </header>
