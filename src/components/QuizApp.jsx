@@ -623,10 +623,10 @@ const QuizApp = () => {
           <div className="p-4 flex items-center justify-between">
             <div className="logo-container w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-white text-2xl font-bold">
               Q
-            </div>
+          </div>
             
             <nav className="flex items-center gap-8">
-              <button 
+          <button 
                 className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
                   currentPage === 'home' 
                     ? 'bg-white/20 text-white' 
@@ -635,8 +635,8 @@ const QuizApp = () => {
                 onClick={() => setCurrentPage('home')}
               >
                 <Home size={18} />
-              </button>
-              <button 
+          </button>
+          {/* <button 
                 className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
                   currentPage === 'stats' 
                     ? 'bg-white/20 text-white' 
@@ -645,8 +645,8 @@ const QuizApp = () => {
                 onClick={() => setCurrentPage('stats')}
               >
                 <BarChart2 size={18} />
-              </button>
-              <button 
+          </button> */}
+          <button 
                 className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
                   currentPage === 'achievements' 
                     ? 'bg-white/20 text-white' 
@@ -655,8 +655,8 @@ const QuizApp = () => {
                 onClick={() => setCurrentPage('achievements')}
               >
                 <Trophy size={18} />
-              </button>
-              <button 
+          </button>
+          <button 
                 className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
                   currentPage === 'bonuses' 
                     ? 'bg-white/20 text-white' 
@@ -665,8 +665,8 @@ const QuizApp = () => {
                 onClick={() => setCurrentPage('bonuses')}
               >
                 <Gift size={18} />
-              </button>
-              <button 
+          </button>
+          <button 
                 className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
                   currentPage === 'rankings' 
                     ? 'bg-white/20 text-white' 
@@ -675,9 +675,9 @@ const QuizApp = () => {
                 onClick={() => setCurrentPage('rankings')}
               >
                 <Crown size={18} />
-              </button>
-            </nav>
-          </div>
+          </button>
+      </nav>
+    </div>
         </header>
         <main className="px-4">
           {renderPage()}
