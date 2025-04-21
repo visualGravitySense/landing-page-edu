@@ -617,74 +617,72 @@ const QuizApp = () => {
   };
 
   return (
-    <div className="quiz-container">
-      <header className="quiz-header">
-        <div className="logo-container">
-          <div className="logo">Q</div>
-          <span className="logo-text">QuizMaster</span>
-        </div>
-        
-        <nav className="nav-container">
-          <button 
-            className={`nav-button ${currentPage === 'home' ? 'active' : ''}`}
-            onClick={() => setCurrentPage('home')}
-          >
-            <Home size={20} />
-            Home
-          </button>
-          <button 
-            className={`nav-button ${currentPage === 'stats' ? 'active' : ''}`}
-            onClick={() => setCurrentPage('stats')}
-          >
-            <BarChart2 size={20} />
-            Statistics
-          </button>
-          <button 
-            className={`nav-button ${currentPage === 'achievements' ? 'active' : ''}`}
-            onClick={() => setCurrentPage('achievements')}
-          >
-            <Trophy size={20} />
-            Achievements
-          </button>
-          <button 
-            className={`nav-button ${currentPage === 'bonuses' ? 'active' : ''}`}
-            onClick={() => setCurrentPage('bonuses')}
-          >
-            <Gift size={20} />
-            Bonuses
-          </button>
-          <button 
-            className={`nav-button ${currentPage === 'rankings' ? 'active' : ''}`}
-            onClick={() => setCurrentPage('rankings')}
-          >
-            <Crown size={20} />
-            Rankings
-          </button>
-        </nav>
-
-        <div className="header-right">
-          <div className="period-selector">
-            {period} Period
-          </div>
-          <div className="user-profile">
-            <div className="avatar">
-              {/* Add user avatar logic here */}
+    <div className="quiz-container min-h-screen ">
+      <div className="max-w-2xl mx-auto w-full">
+        <header className="bg-gradient-to-br from-indigo-500 via-purple-500 to-violet-500 border-b border-indigo-500/20 rounded-b-2xl shadow-lg shadow-purple-500/20 mb-4">
+          <div className="p-4 flex items-center justify-between">
+            <div className="logo-container w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-white text-2xl font-bold">
+              Q
             </div>
-            <div className="level-indicator">
-              <span>Level {userLevel}</span>
-              <div className="level-progress">
-                <div 
-                  className="level-progress-bar" 
-                  style={{ width: `${levelProgress}%` }}
-                />
-              </div>
-            </div>
+            
+            <nav className="flex items-center gap-8">
+              <button 
+                className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
+                  currentPage === 'home' 
+                    ? 'bg-white/20 text-white' 
+                    : 'text-white/60 hover:bg-white/10'
+                }`}
+                onClick={() => setCurrentPage('home')}
+              >
+                <Home size={18} />
+              </button>
+              <button 
+                className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
+                  currentPage === 'stats' 
+                    ? 'bg-white/20 text-white' 
+                    : 'text-white/60 hover:bg-white/10'
+                }`}
+                onClick={() => setCurrentPage('stats')}
+              >
+                <BarChart2 size={18} />
+              </button>
+              <button 
+                className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
+                  currentPage === 'achievements' 
+                    ? 'bg-white/20 text-white' 
+                    : 'text-white/60 hover:bg-white/10'
+                }`}
+                onClick={() => setCurrentPage('achievements')}
+              >
+                <Trophy size={18} />
+              </button>
+              <button 
+                className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
+                  currentPage === 'bonuses' 
+                    ? 'bg-white/20 text-white' 
+                    : 'text-white/60 hover:bg-white/10'
+                }`}
+                onClick={() => setCurrentPage('bonuses')}
+              >
+                <Gift size={18} />
+              </button>
+              <button 
+                className={`w-12 h-12 rounded-xl flex items-center justify-center transition-all duration-200 ${
+                  currentPage === 'rankings' 
+                    ? 'bg-white/20 text-white' 
+                    : 'text-white/60 hover:bg-white/10'
+                }`}
+                onClick={() => setCurrentPage('rankings')}
+              >
+                <Crown size={18} />
+              </button>
+            </nav>
           </div>
-        </div>
-      </header>
-      <main className="flex-grow container mx-auto p-4">
-        {renderPage()}
-      </main>
+        </header>
+        <main className="px-4">
+          {renderPage()}
+        </main>
+      </div>
     </div>
   );
 };
@@ -701,35 +699,35 @@ QuizApp.propTypes = {
 const HomePage = ({ navigateTo, userLevel, levelProgress }) => {
   return (
     <div className="max-w-2xl mx-auto text-center">
-      <div className="home-card rounded-lg shadow-lg p-8 mb-6">
-        <div className="text-6xl mb-4 text-blue-500 flex justify-center">
+      <div className="home-card bg-white rounded-lg shadow-lg p-8 mb-6">
+        <div className="text-6xl mb-4 text-indigo-500 flex justify-center">
           <Award />
         </div>
         <h2 className="text-3xl font-bold mb-4 text-gray-100">Welcome to QuizMaster!</h2>
-        <p className="text-lg mb-6">
+        <p className="text-lg mb-6 text-gray-600">
           Test your knowledge with our interactive quizzes. Challenge yourself, place bets, and increase your bankroll!
         </p>
         
         {/* Level Indicator */}
-        <div className="level-card bg-gradient-to-r from-blue-900 to-purple-900 rounded-lg p-4 mb-6">
+        <div className="level-card bg-gradient-to-r from-indigo-50 to-purple-50 rounded-lg p-4 mb-6 border border-indigo-100">
           <div className="flex items-center justify-center mb-2">
             <Trophy size={24} className="text-yellow-500 mr-2" />
-            <h3 className="text-xl font-bold">Level {userLevel}</h3>
+            <h3 className="text-xl font-bold text-gray-800">Level {userLevel}</h3>
           </div>
           <div className="w-full bg-gray-200 rounded-full h-2.5 mb-2">
             <div 
-              className="bg-gradient-to-r from-blue-500 to-purple-500 h-2.5 rounded-full" 
+              className="bg-gradient-to-r from-indigo-500 to-purple-500 h-2.5 rounded-full" 
               style={{width: `${levelProgress}%`}}
             ></div>
           </div>
-          <p className="text-sm text-gray-200">
+          <p className="text-sm text-gray-600">
             {levelProgress}% to next level
           </p>
         </div>
         
         <button
           onClick={() => navigateTo('game')}
-          className="text-white px-6 py-3 rounded-lg text-lg font-semibold flex items-center mx-auto transition"
+          className="bg-gradient-to-r from-indigo-500 to-purple-500 text-white px-6 py-3 rounded-lg text-lg font-semibold flex items-center mx-auto transition hover:from-indigo-600 hover:to-purple-600 hover:-translate-y-0.5"
         >
           Start Quiz <ChevronRight size={20} className="ml-2" />
         </button>
@@ -828,26 +826,27 @@ const GamePage = ({
             Question {questionNumber}/{totalQuestions}
           </div>
           <div className="flex items-center">
-            <div className="bankroll-indicator px-4 py-2 rounded-lg mr-3 bg-yellow-100 text-yellow-800">
+            <div className="bankroll-indicator px-4 py-2 rounded-lg mr-3">
               <Coins size={16} className="inline mr-1" /> {totalBankroll}
             </div>
             <div className={`timer-indicator px-4 py-2 rounded-lg ${
-              timer > 10 ? 'bg-green-100 text-green-800' : 'bg-red-100 text-red-800'
+              timer > 10 ? 'normal' : 'warning'
             }`}>
               Time: {timer}s
             </div>
           </div>
         </div>
         
-        {/* Level Indicator */}
-        <div className="level-indicator px-4 py-2 rounded-lg mb-4 bg-blue-100 text-blue-800 text-center">
-          <div className="flex items-center justify-center">
-            <Trophy size={16} className="inline mr-1" /> Level {userLevel}
-            <div className="w-24 h-2 bg-gray-200 rounded-full mx-2">
+        {/* Level Progress */}
+        <div className="level-indicator px-4 py-2 rounded-lg mb-4">
+          <div className="flex items-center gap-2">
+            <Trophy size={16} className="text-yellow-500" /> 
+            <span>Level {userLevel}</span>
+            <div className="w-24 bg-gray-200 rounded-full h-2">
               <div 
-                className="h-2 bg-blue-500 rounded-full" 
+                className="h-2 bg-yellow-500 rounded-full transition-all duration-300" 
                 style={{width: `${levelProgress}%`}}
-              ></div>
+              />
             </div>
             <span className="text-xs">{levelProgress}%</span>
           </div>
@@ -880,21 +879,21 @@ const GamePage = ({
         )}
         
         {/* Betting Controls */}
-        <div className="betting-controls mb-4 p-4 rounded-lg bg-gray-900">
-          <div className="flex justify-between items-center mb-2">
-            <h3 className="font-bold">Your Bet</h3>
-            <div className="flex items-center">
+        <div className="betting-controls mb-4 p-6 rounded-2xl bg-gradient-to-br from-indigo-900 via-purple-900 to-violet-900 border border-indigo-500/20 shadow-lg shadow-purple-500/20">
+          <div className="flex justify-between items-center mb-4">
+            <h3 className="text-xl font-bold bg-gradient-to-r from-amber-200 to-yellow-400 text-transparent bg-clip-text">Your Bet</h3>
+            <div className="flex items-center bg-black/30 rounded-xl p-2 backdrop-blur-sm">
               <button 
                 onClick={() => handleBetChange(-5)} 
-                className="px-3 py-1 rounded-lg bg-gray-200 hover:bg-gray-300"
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-red-500 to-pink-500 hover:from-red-600 hover:to-pink-600 text-white font-bold text-xl shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={answered || currentBet <= 5}
               >
                 -
               </button>
-              <span className="mx-3 font-bold">{currentBet}</span>
+              <span className="mx-4 font-bold text-2xl text-amber-300">{currentBet}</span>
               <button 
                 onClick={() => handleBetChange(5)} 
-                className="px-3 py-1 rounded-lg bg-gray-200 hover:bg-gray-300"
+                className="w-10 h-10 flex items-center justify-center rounded-lg bg-gradient-to-br from-green-500 to-emerald-500 hover:from-green-600 hover:to-emerald-600 text-white font-bold text-xl shadow-lg transition-all duration-200 disabled:opacity-50 disabled:cursor-not-allowed"
                 disabled={answered || currentBet >= totalBankroll}
               >
                 +
@@ -903,15 +902,17 @@ const GamePage = ({
           </div>
           
           {/* 50/50 Lifeline */}
-          <div className="text-center mt-2">
+          <div className="text-center">
             <button 
               onClick={useFiftyFifty}
               disabled={fiftyFiftyUsed || answered || totalBankroll < 10}
-              className={`px-4 py-1 rounded-lg text-white flex items-center mx-auto ${
-                fiftyFiftyUsed ? 'bg-gray-400' : 'bg-orange-500 hover:bg-orange-600'
+              className={`px-6 py-3 rounded-xl text-white flex items-center mx-auto transition-all duration-200 ${
+                fiftyFiftyUsed 
+                  ? 'bg-gray-600 cursor-not-allowed opacity-50' 
+                  : 'bg-gradient-to-r from-orange-500 to-amber-500 hover:from-orange-600 hover:to-amber-600 shadow-lg hover:shadow-orange-500/25 hover:-translate-y-0.5'
               }`}
             >
-              <AlertTriangle size={16} className="mr-1" /> 
+              <AlertTriangle size={20} className="mr-2" /> 
               50/50 Help (-10 points)
             </button>
           </div>
