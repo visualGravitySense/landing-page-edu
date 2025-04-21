@@ -10,8 +10,8 @@ import {
 } from '@fortawesome/free-solid-svg-icons';
 
 const Features = () => {
-  const features = [
-    {
+const features = [
+  {
       icon: faGamepad,
       iconBgColor: 'bg-indigo-100',
       iconTextColor: 'text-indigo-600',

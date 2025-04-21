@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import './CTA.css';
 
 const CTA = () => {
   const [email, setEmail] = useState('');
@@ -19,29 +20,47 @@ const CTA = () => {
   };
 
   return (
-    <section className="gradient-bg text-white py-16">
-      <div className="container mx-auto px-6 text-center">
-        <h2 className="text-3xl font-bold mb-6">Join the Learning Revolution</h2>
-        <p className="text-xl mb-10 max-w-2xl mx-auto">
-          Be among the first to experience how EduQuest transforms education through gamification and interactive learning.
-        </p>
-        <div className="max-w-md mx-auto">
-          <form id="signup-form-bottom" className="flex flex-col md:flex-row gap-3" onSubmit={handleSubmit}>
-            <input 
-              type="email" 
-              placeholder="Your email address" 
-              required 
-              className="flex-grow px-4 py-3 rounded-lg text-gray-800 focus:outline-none"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-            />
-            <button 
-              type="submit" 
-              className="px-6 py-3 bg-white text-indigo-700 hover:bg-gray-100 rounded-lg font-medium transition-colors duration-200"
+    <section className="cta-section">
+      <div className="cta-content">
+        <div className="cta-glass">
+          <h2 className="cta-title">
+            Elevate Learning,<br />
+            Ignite Results
+          </h2>
+          <p className="text-xl mb-12 max-w-2xl mx-auto text-white/90 leading-relaxed">
+            Be among the first to experience how EduQuest transforms education through gamification 
+            and interactive learning. Transform ordinary courses into extraordinary journeys.
+          </p>
+          <div className="max-w-md mx-auto relative">
+            <form 
+              id="signup-form-bottom" 
+              className="flex flex-col md:flex-row gap-4" 
+              onSubmit={handleSubmit}
             >
-              {submitStatus || 'Get Early Access'}
-            </button>
-          </form>
+              <input 
+                type="email" 
+                placeholder="Enter your email address" 
+                required 
+                className="cta-input flex-grow px-6 py-4 rounded-xl text-lg focus:outline-none"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+              />
+              <button 
+                type="submit" 
+                className="cta-button px-8 py-4 rounded-xl text-lg whitespace-nowrap"
+              >
+                Get Early Access
+              </button>
+            </form>
+            {submitStatus && (
+              <div className="success-message text-indigo-600 font-medium">
+                {submitStatus}
+              </div>
+            )}
+          </div>
+          <p className="mt-6 text-white/60 text-sm text-center">
+            Join educators worldwide who are revolutionizing engagement and retention.
+          </p>
         </div>
       </div>
     </section>
