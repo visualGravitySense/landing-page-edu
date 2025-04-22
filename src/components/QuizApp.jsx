@@ -619,7 +619,7 @@ const QuizApp = () => {
   return (
     <div className="quiz-container min-h-screen ">
       <div className="max-w-2xl mx-auto w-full">
-        <header className="bg-gradient-to-br from-indigo-500 via-purple-500 to-violet-500 border-b border-indigo-500/20 rounded-b-2xl shadow-lg shadow-purple-500/20 mb-4">
+        <header className="bg-gradient-to-br from-indigo-500 via-purple-500 to-violet-500 border-b border-indigo-500/20 rounded-2xl shadow-lg shadow-purple-500/20 mb-4">
           <div className="p-4 flex items-center justify-between">
             <div className="logo-container w-12 h-12 bg-white/20 rounded-xl flex items-center justify-center text-white text-2xl font-bold">
               Q

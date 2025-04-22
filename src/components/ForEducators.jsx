@@ -43,9 +43,9 @@ const ForEducators = () => {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-tr from-green-300/20 to-emerald-300/20 transform rotate-3 rounded-2xl"></div>
               <img 
-                src="/api/placeholder/450/350" 
+                src="https://i.pinimg.com/736x/45/5e/39/455e39805fd6d82dc7377a641d7f8c72.jpg" 
                 alt="For Educators" 
-                className="rounded-2xl shadow-xl relative z-10 transform -rotate-3 hover:rotate-0 transition-transform duration-300"
+                className="w-96 h-96 object-cover rounded-2xl shadow-xl relative z-10 transform -rotate-3 hover:rotate-0 transition-transform duration-300"
               />
             </div>
           </div>
