@@ -1,0 +1,136 @@
+/* Home Page Styles */
+.home-page {
+  min-height: 100vh;
+}
+
+/* Hero Section */
+.hero-section {
+  background: linear-gradient(135deg, #1a237e, #0d47a1);
+  color: white;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.hero-content {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.hero-content h1 {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+}
+
+.hero-content p {
+  font-size: 1.2rem;
+  margin-bottom: 2rem;
+}
+
+/* Featured Courses Section */
+.featured-courses {
+  padding: 4rem 2rem;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.courses-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+/* Course Card Styles */
+.course-card {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+}
+
+.course-image {
+  height: 200px;
+  overflow: hidden;
+}
+
+.course-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.course-content {
+  padding: 1.5rem;
+}
+
+.course-content h3 {
+  margin: 0 0 1rem 0;
+  font-size: 1.25rem;
+}
+
+.course-description {
+  color: #666;
+  margin-bottom: 1rem;
+}
+
+.course-meta {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* CTA Section */
+.cta-section {
+  background: #f5f5f5;
+  padding: 4rem 2rem;
+  text-align: center;
+}
+
+.cta-section h2 {
+  margin-bottom: 1rem;
+}
+
+.cta-section p {
+  margin-bottom: 2rem;
+  color: #666;
+}
+
+/* Buttons */
+.btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 4px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #1a237e;
+  color: white;
+  border: none;
+}
+
+.btn-primary:hover {
+  background-color: #0d47a1;
+}
+
+.btn-secondary {
+  background-color: white;
+  color: #1a237e;
+  border: 2px solid #1a237e;
+}
+
+.btn-secondary:hover {
+  background-color: #1a237e;
+  color: white;
+} 

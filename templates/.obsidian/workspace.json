@@ -1,0 +1,195 @@
+{
+  "main": {
+    "id": "9410cff6379338e4",
+    "type": "split",
+    "children": [
+      {
+        "id": "c082e41018a97d4a",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "bdfaa77c34198a0b",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "UX Design/Fogg's Behavior Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Fogg's Behavior Model"
+            }
+          },
+          {
+            "id": "c617eb45f6a845a6",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Business Model.md",
+                "mode": "source",
+                "source": false
+              },
+              "icon": "lucide-file",
+              "title": "Business Model"
+            }
+          }
+        ],
+        "currentTab": 1
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "29808956c5e947b3",
+    "type": "split",
+    "children": [
+      {
+        "id": "4426dd0036896dab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1902771bfe51413d",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "604f754907067290",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "e628aa5ae6395442",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "be80dddda5a5c72d",
+    "type": "split",
+    "children": [
+      {
+        "id": "3e3f963342be7fb2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "d2162f80287e28b0",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "product/Fogg's Behavior Model.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for Fogg's Behavior Model"
+            }
+          },
+          {
+            "id": "47f759e8fbf31b11",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "product/Fogg's Behavior Model.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links from Fogg's Behavior Model"
+            }
+          },
+          {
+            "id": "e75c2e524112b3b5",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "bc72b90ad6249da8",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "product/Fogg's Behavior Model.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline of Fogg's Behavior Model"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c617eb45f6a845a6",
+  "lastOpenFiles": [
+    "Content.md",
+    "Business Model.md",
+    "Product Design.md",
+    "Development Plan.md",
+    "UX Design/Fogg's Behavior Model.md",
+    "UX Design"
+  ]
+}
