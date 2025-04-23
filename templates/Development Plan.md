@@ -16,8 +16,18 @@
 ## Integrate [[Monetization]] 
 
 ### Wednesday & Thursday: Client Acquisition & Service
+
+# Mornings
+
+### ~~==Business Classes From Torrent Udemy==~~
+### HTML / UX UI CLASSES
+- Presentation and tasks (on my web): Roadmap + Udemy (Torent)
+	- **Program for HTML** 
+	- **Program for UX UI**
+- Class planning for Tootu-Kassa proposal
+
+# DAY
 ### DIGO - Develop Classes Promo Website 
-- ~~==Business Classes From Torrent Udemy==~~
 - All 6 Courses with description (Only English) | Localisation | New Classes
 - Pricing & Crowd Funding: Early Access
 - Right SELL Content main page | Permanent pages
@@ -29,10 +39,12 @@
 - BusMod: Most easiest
 - Monet: **Оказывай консалтинговые услуги** в области образовательных технологий для школ и компаний
 	Break & snack
+
+# Afternoon
+
 - ==Viktoria Web Freelance - React code work==
 	Lunch break
 - ==Send 10 CVs ==
 	Break
-- Class planning for TootuKassa proposal
 - MOOD GIFY
 - ==Check Taxi Work Prices==

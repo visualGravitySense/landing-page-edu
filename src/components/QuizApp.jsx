@@ -7,7 +7,7 @@ import './QuizApp.css';
 import PropTypes from 'prop-types';
 
 // Main App Component
-const QuizApp = () => {
+const QuizApp = ({ navigateTo: externalNavigate, userLevel: initialUserLevel, levelProgress: initialLevelProgress }) => {
   const { updateQuizStats } = useQuizContext();
   const [currentPage, setCurrentPage] = useState('home');
   const [score, setScore] = useState(0);
@@ -28,11 +28,11 @@ const QuizApp = () => {
   const [totalBankroll, setTotalBankroll] = useState(100); // Starting bankroll
   
   // New level and achievement features
-  const [userLevel, setUserLevel] = useState(1);
+  const [userLevel, setUserLevel] = useState(initialUserLevel || 1);
   const [experiencePoints, setExperiencePoints] = useState(0);
   const [achievements, setAchievements] = useState([]);
   const [rankings, setRankings] = useState([]);
-  const [levelProgress, setLevelProgress] = useState(0);
+  const [levelProgress, setLevelProgress] = useState(initialLevelProgress || 0);
   const [totalExperience, setTotalExperience] = useState(0);
   const [highestStreak, setHighestStreak] = useState(0);
   const [totalCorrectAnswers, setTotalCorrectAnswers] = useState(0);
@@ -76,6 +76,9 @@ const QuizApp = () => {
 
   // Handle navigation between pages
   const navigateTo = (page) => {
+    if (externalNavigate) {
+      externalNavigate(page);
+    }
     setCurrentPage(page);
     if (page === 'game') {
       resetGame();
@@ -688,11 +691,15 @@ const QuizApp = () => {
 };
 
 QuizApp.propTypes = {
-  navigateTo: PropTypes.func.isRequired,
-  userLevel: PropTypes.number.isRequired,
-  levelProgress: PropTypes.number.isRequired,
-  question: PropTypes.object,
-  questionNumber: PropTypes.number
+  navigateTo: PropTypes.func,
+  userLevel: PropTypes.number,
+  levelProgress: PropTypes.number
+};
+
+QuizApp.defaultProps = {
+  navigateTo: undefined,
+  userLevel: 1,
+  levelProgress: 0
 };
 
 // Home Page Component
