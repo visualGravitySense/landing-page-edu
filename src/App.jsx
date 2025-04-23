@@ -9,12 +9,14 @@ import TextLesson from './pages/TextLesson';
 import Quiz from './pages/Quiz';
 import UserProfile from './pages/UserProfile';
 import AdminDashboard from './pages/AdminDashboard';
+import Course from './pages/Course';
 
 function App() {
   return (
     <Router basename="/landing-page-edu">
       <Routes>
         <Route path="/" element={<Home />} />
+        <Route path="/courses/:courseId" element={<Course />} />
         <Route path="/courses/:courseId/lessons/:lessonId/video" element={<VideoLesson />} />
         <Route path="/courses/:courseId/lessons/:lessonId/text" element={<TextLesson />} />
         <Route path="/courses/:courseId/lessons/:lessonId/quiz" element={<Quiz />} />

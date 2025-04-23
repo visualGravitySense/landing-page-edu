@@ -6,8 +6,8 @@ Here's a streamlined MVP structure for your business education portal:
 
 **1. Authentication System**
 
-- Simple login/signup with Firebase Auth
-- User profiles with business type/interests
+- ~~Simple login/signup with Firebase Auth~~
+- ~~User profiles with business type/interests~~
 
 **2. Course Catalog**
 
