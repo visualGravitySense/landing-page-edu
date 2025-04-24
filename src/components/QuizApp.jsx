@@ -7,7 +7,11 @@ import './QuizApp.css';
 import PropTypes from 'prop-types';
 
 // Main App Component
-const QuizApp = () => {
+const QuizApp = ({ 
+  externalNavigate = null,
+  initialUserLevel = 1,  // Changed from userLevel to initialUserLevel
+  initialLevelProgress = 0  // Changed from levelProgress to initialLevelProgress
+}) => {
   const { updateQuizStats } = useQuizContext();
   const [currentPage, setCurrentPage] = useState('home');
   const [score, setScore] = useState(0);
@@ -25,14 +29,14 @@ const QuizApp = () => {
   const [streak, setStreak] = useState(0);
   const [fiftyFiftyUsed, setFiftyFiftyUsed] = useState(false);
   const [eliminatedOptions, setEliminatedOptions] = useState([]);
-  const [totalBankroll, setTotalBankroll] = useState(100); // Starting bankroll
+  const [totalBankroll, setTotalBankroll] = useState(100);
   
   // New level and achievement features
-  const [userLevel, setUserLevel] = useState(1);
+  const [userLevel, setUserLevel] = useState(initialUserLevel);  // Using initialUserLevel here
   const [experiencePoints, setExperiencePoints] = useState(0);
   const [achievements, setAchievements] = useState([]);
   const [rankings, setRankings] = useState([]);
-  const [levelProgress, setLevelProgress] = useState(0);
+  const [levelProgress, setLevelProgress] = useState(initialLevelProgress);  // Using initialLevelProgress here
   const [totalExperience, setTotalExperience] = useState(0);
   const [highestStreak, setHighestStreak] = useState(0);
   const [totalCorrectAnswers, setTotalCorrectAnswers] = useState(0);
@@ -76,6 +80,9 @@ const QuizApp = () => {
 
   // Handle navigation between pages
   const navigateTo = (page) => {
+    if (externalNavigate) {
+      externalNavigate(page);
+    }
     setCurrentPage(page);
     if (page === 'game') {
       resetGame();
@@ -688,11 +695,9 @@ const QuizApp = () => {
 };
 
 QuizApp.propTypes = {
-  navigateTo: PropTypes.func.isRequired,
-  userLevel: PropTypes.number.isRequired,
-  levelProgress: PropTypes.number.isRequired,
-  question: PropTypes.object,
-  questionNumber: PropTypes.number
+  externalNavigate: PropTypes.func,
+  initialUserLevel: PropTypes.number,
+  initialLevelProgress: PropTypes.number
 };
 
 // Home Page Component

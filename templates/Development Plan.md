@@ -1,3 +1,7 @@
+> [!TIP] Main Target
+> MAIN MANAGEMENT SOFT
+> Development plan MM
+
 
 >[!TIP] **16:30-18:00**: DIGO - Develop Classes Website
 >	- Change Course: Build Classes Portal
@@ -15,11 +19,22 @@
 ## Integrate [[Business Model]]
 ## Integrate [[Monetization]] 
 
-### Wednesday & Thursday: Client Acquisition & Service
+
+# Mornings
+
+### ~~==Business Classes From Torrent Udemy==~~
+### HTML / UX UI CLASSES
+- USE ALL AI FOR CREATION CLASSES
+- Presentation and tasks (on my web): Roadmap + Udemy (Torrent)
+	- **Program for HTML** 
+	- **Program for UX UI** 
+		- Program: Every day new AI, new UX theory, new HTML content
+- Class planning for Tootu-Kassa proposal
+
+# DAY
 ### DIGO - Develop Classes Promo Website 
-- ~~==Business Classes From Torrent Udemy==~~
-- All 6 Courses with description (Only English) | Localisation | New Classes
-- Pricing & Crowd Funding: Early Access
+- ~~All 6 Courses with description (Only English)~~ | Localisation | New Classes
+- [[CrowdFunding]] on the web: Early Access: & Hooandja. All Target Groups
 - Right SELL Content main page | Permanent pages
 - All Wok on page for EARNING MONEY: 
 	- PAYMENTS
@@ -29,10 +44,12 @@
 - BusMod: Most easiest
 - Monet: **Оказывай консалтинговые услуги** в области образовательных технологий для школ и компаний
 	Break & snack
+
+# Afternoon
+
 - ==Viktoria Web Freelance - React code work==
 	Lunch break
 - ==Send 10 CVs ==
 	Break
-- Class planning for TootuKassa proposal
 - MOOD GIFY
 - ==Check Taxi Work Prices==

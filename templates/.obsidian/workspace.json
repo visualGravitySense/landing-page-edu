@@ -8,21 +8,7 @@
         "type": "tabs",
         "children": [
           {
-            "id": "bdfaa77c34198a0b",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "UX Design/Fogg's Behavior Model.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Fogg's Behavior Model"
-            }
-          },
-          {
-            "id": "c617eb45f6a845a6",
+            "id": "04ec7fa4653c1665",
             "type": "leaf",
             "state": {
               "type": "markdown",
@@ -36,63 +22,35 @@
             }
           },
           {
-            "id": "e81755d0bb6f2172",
+            "id": "8406610d90ed91fd",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Product Design.md",
+                "file": "CrowdFunding/Development/уникальное ценностное предложение.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Product Design"
+              "title": "уникальное ценностное предложение"
             }
           },
           {
-            "id": "2096f25b25db1658",
+            "id": "bb91d206d47b1215",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Monetization.md",
+                "file": "CrowdFunding/CrowdFunding.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "Monetization"
-            }
-          },
-          {
-            "id": "a9ecf1746ecebd0d",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development Plan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Development Plan"
-            }
-          },
-          {
-            "id": "69ac3b823c1f7041",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Development Plan.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "Development Plan"
+              "title": "CrowdFunding"
             }
           }
         ],
-        "currentTab": 4
+        "currentTab": 2
       }
     ],
     "direction": "vertical"
@@ -239,10 +197,23 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "a9ecf1746ecebd0d",
+  "active": "bb91d206d47b1215",
   "lastOpenFiles": [
-    "Content.md",
+    "CrowdFunding/Development/уникальное ценностное предложение.md",
+    "CrowdFunding/CrowdFunding.md",
     "Development Plan.md",
+    "CrowdFunding/Development",
+    "UX Design/Old Program.md",
+    "HTML/Old Program.md",
+    "HTML/html Course Content.md",
+    "Classes Production.md",
+    "UX Design/UX UI Course.md",
+    "HTML",
+    "Students to work.md",
+    "CrowdFunding/Gift Ideas.md",
+    "CrowdFunding",
+    "Classes Content.md",
+    "Website Content.md",
     "Business Model.md",
     "Product Design.md",
     "Monetization.md",

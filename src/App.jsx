@@ -4,6 +4,7 @@ import './styles/home.css';
 import './styles/lessons.css';
 import './styles/admin.css';
 import Home from './pages/Home';
+import Landing from './pages/Landing';
 import VideoLesson from './pages/VideoLesson';
 import TextLesson from './pages/TextLesson';
 import Quiz from './pages/Quiz';
@@ -15,7 +16,8 @@ function App() {
   return (
     <Router basename="/landing-page-edu">
       <Routes>
-        <Route path="/" element={<Home />} />
+        <Route path="/" element={<Landing />} />
+        <Route path="/courses" element={<Home />} />
         <Route path="/courses/:courseId" element={<Course />} />
         <Route path="/courses/:courseId/lessons/:lessonId/video" element={<VideoLesson />} />
         <Route path="/courses/:courseId/lessons/:lessonId/text" element={<TextLesson />} />

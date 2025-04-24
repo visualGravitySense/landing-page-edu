@@ -23,6 +23,11 @@ const HeroSection = () => {
     }, 3000);
   };
 
+  const handleQuizNavigation = (page) => {
+    console.log('Navigating to:', page);
+    // Add any additional navigation logic here
+  };
+
   return (
     <header className="gradient-bg text-white min-h-screen flex items-center">
       <div className="container mx-auto px-6 lg:px-8">
@@ -69,7 +74,11 @@ const HeroSection = () => {
           <div className="h-full flex items-center mt-16 lg:mt-24">
             <div className="w-full max-w-xl mx-auto">
               <QuizProvider>
-                <QuizApp />
+                <QuizApp 
+                  navigateTo={handleQuizNavigation}
+                  userLevel={1}
+                  levelProgress={0}
+                />
               </QuizProvider>
             </div>
           </div>
