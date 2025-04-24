@@ -7,7 +7,11 @@ import './QuizApp.css';
 import PropTypes from 'prop-types';
 
 // Main App Component
-const QuizApp = ({ navigateTo: externalNavigate, userLevel: initialUserLevel, levelProgress: initialLevelProgress }) => {
+const QuizApp = ({ 
+  externalNavigate = null,
+  initialUserLevel = 1,  // Changed from userLevel to initialUserLevel
+  initialLevelProgress = 0  // Changed from levelProgress to initialLevelProgress
+}) => {
   const { updateQuizStats } = useQuizContext();
   const [currentPage, setCurrentPage] = useState('home');
   const [score, setScore] = useState(0);
@@ -25,14 +29,14 @@ const QuizApp = ({ navigateTo: externalNavigate, userLevel: initialUserLevel, le
   const [streak, setStreak] = useState(0);
   const [fiftyFiftyUsed, setFiftyFiftyUsed] = useState(false);
   const [eliminatedOptions, setEliminatedOptions] = useState([]);
-  const [totalBankroll, setTotalBankroll] = useState(100); // Starting bankroll
+  const [totalBankroll, setTotalBankroll] = useState(100);
   
   // New level and achievement features
-  const [userLevel, setUserLevel] = useState(initialUserLevel || 1);
+  const [userLevel, setUserLevel] = useState(initialUserLevel);  // Using initialUserLevel here
   const [experiencePoints, setExperiencePoints] = useState(0);
   const [achievements, setAchievements] = useState([]);
   const [rankings, setRankings] = useState([]);
-  const [levelProgress, setLevelProgress] = useState(initialLevelProgress || 0);
+  const [levelProgress, setLevelProgress] = useState(initialLevelProgress);  // Using initialLevelProgress here
   const [totalExperience, setTotalExperience] = useState(0);
   const [highestStreak, setHighestStreak] = useState(0);
   const [totalCorrectAnswers, setTotalCorrectAnswers] = useState(0);
@@ -691,15 +695,9 @@ const QuizApp = ({ navigateTo: externalNavigate, userLevel: initialUserLevel, le
 };
 
 QuizApp.propTypes = {
-  navigateTo: PropTypes.func,
-  userLevel: PropTypes.number,
-  levelProgress: PropTypes.number
-};
-
-QuizApp.defaultProps = {
-  navigateTo: undefined,
-  userLevel: 1,
-  levelProgress: 0
+  externalNavigate: PropTypes.func,
+  initialUserLevel: PropTypes.number,
+  initialLevelProgress: PropTypes.number
 };
 
 // Home Page Component
