@@ -22,7 +22,7 @@
 
 # Mornings
 
-### ~~==Business Classes From Torrent Udemy==~~
+### ==Business Classes From Torrent Udemy==
 ### HTML / UX UI CLASSES
 - USE ALL AI FOR CREATION CLASSES
 - Presentation and tasks (on my web): Roadmap + Udemy (Torrent)
@@ -31,9 +31,9 @@
 		- Program: Every day new AI, new UX theory, new HTML content
 - Class planning for Tootu-Kassa proposal
 
-# DAY
+# DAY - but first prepare HTML UX Program
 ### DIGO - Develop Classes Promo Website 
-- ~~All 6 Courses with description (Only English)~~ | Localisation | New Classes
+- ~~All 6 Courses with description (Only English)~~ 
 - [[CrowdFunding]] on the web: Early Access: & Hooandja. All Target Groups
 - Right SELL Content main page | Permanent pages
 - All Wok on page for EARNING MONEY: 
