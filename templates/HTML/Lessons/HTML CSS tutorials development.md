@@ -15,5 +15,8 @@ MarkDown Outline
 Register GitHub + Guide
 Linked In : LinkedIn Guide + Design materials + content
 
+https://www.behaviormodel.org/
+https://blog.logrocket.com/ux-design/fogg-behavior-model/
+
 First Application : 
 HELLO WORLD

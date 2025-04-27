@@ -52,7 +52,7 @@ The Community Resource Hub will be a comprehensive website serving as a one-stop
 
 ## Team Structure & Responsibilities
 
-### Core Sections (One Student Per Section)
+### Core Sections (One Group Per Section)
 
 1. **Homepage & Navigation** - Site intro, main navigation, search functionality
 2. **Interactive Map** - Map interface with filtered points of interest
@@ -65,10 +65,10 @@ The Community Resource Hub will be a comprehensive website serving as a one-stop
 
 ### Cross-Cutting Responsibilities
 
-- **Design System Maintenance**: 2 students responsible for maintaining design consistency
-- **User Testing Coordination**: 2 students leading user testing sessions
-- **Documentation**: 2 students coordinating project documentation
-- **Integration & Quality Assurance**: 2 students ensuring all components work together
+- **Design System Maintenance**: students responsible for maintaining design consistency
+- **User Testing Coordination**: students leading user testing sessions
+- **Documentation**: students coordinating project documentation
+- **Integration & Quality Assurance**: students ensuring all components work together
 
 ## Technical Specifications
 
