@@ -20,36 +20,37 @@
 ## Integrate [[Monetization]] 
 
 
-# Mornings
+# Mornings 
+## ==Thing oh the Day==: Viktoria Web Freelance : Add Functionality, web theme 
 
 ### ==Business Classes From Torrent Udemy==
 ### HTML / UX UI CLASSES
-- USE ALL AI FOR CREATION CLASSES
+- ==USE ALL AI FOR CREATION CLASSES==
 - Presentation and tasks (on my web): Roadmap + Udemy (Torrent)
-	- **Program for HTML** 
+	- Old HTML program >> NEW **Program for HTML** 
 	- **Program for UX UI** 
 		- Program: Every day new AI, new UX theory, new HTML content
 - Class planning for Tootu-Kassa proposal
 
-# DAY - but first prepare HTML UX Program
-### DIGO - Develop Classes Promo Website 
-- ~~All 6 Courses with description (Only English)~~ 
-- [[CrowdFunding]] on the web: Early Access: & Hooandja. All Target Groups
-- Right SELL Content main page | Permanent pages
-- All Wok on page for EARNING MONEY: 
-	- PAYMENTS
-	- Analytics
-- Mass Email Marketing 100 per day | TESTING
-- SOCIAL MEDIA MARKETING
-- BusMod: Most easiest
-- Monet: **Оказывай консалтинговые услуги** в области образовательных технологий для школ и компаний
-	Break & snack
-
-# Afternoon
-
-- ==Viktoria Web Freelance - React code work==
+- FREELANCE NEW PLAN: 
+	- Viktoria Web Freelance : Add Functionality, wb theme 
+	- Viktorija > Portfolio Work For Product Owner: [[Online Educarion Website]]
+	- ==Viktorija > PRESENTATION AND NEW CUSTOMERS==
+	- RESEARCH CLASSES | Courses Directory
+	- EVENT FOR CLASSES
 	Lunch break
-- ==Send 10 CVs ==
+	
+- ==Send 10 CVs==
+- Portfolio WORKS FOR Product Owner:
+	- POS for Beauty Salons
+	- EVENT FOR BEAUTY SALONS
 	Break
 - MOOD GIFY
-- ==Check Taxi Work Prices==
+- POS For Beauty salons 
+  
+- Plan For Cover Band and Visuals
+- Sell old music stuff
+- Check Taxi Work Prices
+
+
+[[TMP]]
